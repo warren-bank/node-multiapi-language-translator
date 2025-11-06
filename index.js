@@ -1,6 +1,9 @@
 const libre = require('@warren-bank/libre-language-translator')
 const deepl = require('@warren-bank/deepl-language-translator')
 
+// note: this class is identical in both "libre" and "deepl" libraries
+const DuplicatesStore = require('@warren-bank/libre-language-translator/lib/optimize-duplicates/duplicates_store')
+
 const api = {
   service: null,
   key:     null,
@@ -100,6 +103,7 @@ const translate = async (...args) => {
 }
 
 module.exports = {
+  DuplicatesStore,
   set_api,
   init, // returns a promise: library is ready to use once resolved
   get_input_languages,

@@ -105,8 +105,8 @@ npm install @warren-bank/multiapi-language-translator
     * input_language_code
       - type: string
   - return value:
-      - type: boolean
-      - value indicates whether the specified input language code is in the [list of supported languages](#supported-languages)
+    * type: boolean
+    * value indicates whether the specified input language code is in the [list of supported languages](#supported-languages)
   - prerequisites:
     * `set_api()` and `init()`
 
@@ -118,10 +118,33 @@ npm install @warren-bank/multiapi-language-translator
     * output_language_code
       - type: string
   - return value:
-      - type: boolean
-      - value indicates whether the specified output language code is in the [list of supported languages](#supported-languages) for the specified input language code
+    * type: boolean
+    * value indicates whether the specified output language code is in the [list of supported languages](#supported-languages) for the specified input language code
   - prerequisites:
     * `set_api()` and `init()`
+
+#### Library API (very advanced usage)
+
+* class: `DuplicatesStore`
+  - constructor: DuplicatesStore(input_strings_array)
+    * input parameters:
+      - input_strings_array
+        * type: array of strings
+        * array may contain duplicate values
+  - dehydrate_input_strings_array()
+    * input parameters:
+      - _none_
+    * return value:
+      - type: array of strings
+      - array does not contain any duplicates
+  - rehydrate_translated_strings_array(translated_strings_array)
+    * input parameters:
+      - translated_strings_array
+        * type: array of strings
+        * array does not contain any duplicates
+    * return value:
+      - type: array of strings
+      - array may contain duplicate values
 
 #### Library Examples
 

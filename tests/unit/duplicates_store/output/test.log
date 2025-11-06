@@ -1,0 +1,27 @@
+count of input strings = 4
+count of deduped input strings = 2
+count of deduped translated strings = 2
+count of rehydrated translated strings = 4
+
+----------------------------------------
+
+input strings = [
+  "Hello world",
+  "Welcome to the jungle",
+  "Hello world",
+  "Welcome to the jungle"
+]
+deduped input strings = [
+  "Hello world",
+  "Welcome to the jungle"
+]
+deduped translated strings = [
+  "Hallo Welt",
+  "Willkommen im Dschungel"
+]
+rehydrated translated strings = [
+  "Hallo Welt",
+  "Willkommen im Dschungel",
+  "Hallo Welt",
+  "Willkommen im Dschungel"
+]

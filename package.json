@@ -1,6 +1,6 @@
 {
   "name": "@warren-bank/multiapi-language-translator",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "index.js",
   "description": "Multi-API language translation library. Supported APIs: LibreTranslate, DeepL.",
   "license": "GPL-2.0",
