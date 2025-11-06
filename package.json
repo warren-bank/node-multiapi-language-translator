@@ -1,0 +1,20 @@
+{
+  "name": "@warren-bank/multiapi-language-translator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "Multi-API language translation library. Supported APIs: LibreTranslate, DeepL.",
+  "license": "GPL-2.0",
+  "dependencies": {
+    "@warren-bank/libre-language-translator": "^2.0.1",
+    "@warren-bank/deepl-language-translator": "^1.0.1"
+  },
+  "author": {
+    "name":  "Warren R. Bank",
+    "email": "warren.r.bank@gmail.com",
+    "url":   "https://github.com/warren-bank"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/warren-bank/node-multiapi-language-translator"
+  }
+}
